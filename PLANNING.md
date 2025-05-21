@@ -41,20 +41,21 @@ AI Coding Agent Execution Guidelines
 │   ├── Core Principles
 │   ├── Project Structure
 │   ├── Development Workflow
-│   ├── Testing Strategy
 │   ├── Documentation
-│   ├── MCP Integration
-│   ├── Tool Usage and Response Protocols
-│   ├── Quality Assurance
-│   ├── Deployment
+│   ├── MCP Integration and Tool Usage
+│   ├── Quality Assurance and Testing
+│   ├── Code Style and Lint Compliance
+│   ├── Deployment and DevOps
 │   ├── Continuous Improvement
-│   ├── Self-Monitoring
-│   ├── Error Recovery
-│   ├── Coding Style
-│   ├── Lint Error Prevention
-│   ├── Uncertainty Management Protocol
-│   └── Task Analysis Framework
-└── Response Wrapper
+│   ├── Self-Monitoring and Error Recovery
+│   ├── Uncertainty Management
+│   ├── Task Analysis Framework
+│   ├── AI-Human Collaboration Patterns
+│   └── Performance Optimization
+├── Response Wrapper
+└── Analysis Templates
+    ├── Task Analysis Template
+    └── Uncertainty Expression Templates
 ```
 
 ## Guidelines Evolution
@@ -84,6 +85,8 @@ Planned enhancements to the guidelines include:
 3. **Metrics Framework**: Tools for measuring the effectiveness of AI-assisted development
 4. **Case Studies**: Documented examples of successful AI-assisted development workflows
 5. **Visual Documentation**: Diagrams and flowcharts illustrating key processes
+6. **Collaboration Patterns Library**: Collection of effective AI-human collaboration scenarios
+7. **Performance Optimization Patterns**: Catalog of common performance patterns by language
 
 ## Decision Log
 
@@ -92,6 +95,9 @@ This section records key decisions made regarding the guidelines:
 1. **2023-05-21**: Added Lint Error Prevention and Uncertainty Management Protocol sections
 2. **2023-05-21**: Integrated Task Analysis Framework as a new section
 3. **2023-05-21**: Updated Response Wrapper to reference the Task Analysis Framework
+4. **2023-05-21**: Restructured guidelines with merged sections and new organization
+5. **2023-05-21**: Added AI-Human Collaboration Patterns and Performance Optimization sections
+6. **2023-05-21**: Moved templates to dedicated Analysis Templates section
 
 ## Contribution Guidelines
 
@@ -100,3 +106,4 @@ This section records key decisions made regarding the guidelines:
 3. **Technical Focus**: Guidelines should prioritize technical precision over stylistic considerations
 4. **Practical Templates**: Include templates and examples where possible
 5. **Cross-References**: Maintain logical connections between related sections
+6. **Collaboration Patterns**: Consider how changes affect AI-human interaction dynamics
