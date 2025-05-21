@@ -41,7 +41,7 @@
 - Check for regressions
 
 ## 🧪 Testing Strategy
-- Write tests for all new functionality
+- Ask if tests should be implemented
 - Include edge cases and error conditions
 - Use mocking for external dependencies
 - Maintain test data in a separate directory
