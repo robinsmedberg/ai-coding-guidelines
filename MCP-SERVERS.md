@@ -185,6 +185,123 @@ claude mcp logs server-name
 2. Restart your Claude Code session to activate new servers
 3. Test functionality by asking Claude to use the new capabilities
 
+### Windsurf
+
+Windsurf supports MCP servers through configuration files in your project or user settings.
+
+#### Project-Level Configuration
+Create a `.windsurf/mcp_servers.json` file in your project root:
+
+```json
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "."
+      ]
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-brave-search"
+      ],
+      "env": {
+        "BRAVE_API_KEY": "your-api-key-here"
+      }
+    }
+  }
+}
+```
+
+#### User-Level Configuration
+For global MCP server access across all projects, configure in Windsurf settings:
+
+1. Open Windsurf Settings
+2. Navigate to Extensions > MCP Servers
+3. Add server configurations using the same JSON format
+
+### Cursor
+
+Cursor supports MCP through its settings configuration.
+
+#### Configuration Method
+1. Open Cursor Settings (Cmd/Ctrl + ,)
+2. Search for "MCP" or navigate to Extensions > MCP
+3. Add server configurations in JSON format
+
+#### Example Configuration
+```json
+{
+  "cursor.mcp.servers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/path/to/your/projects"
+      ]
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ]
+    },
+    "desktop-commander": {
+      "command": "npx",
+      "args": ["-y", "@wonderwhy-er/desktop-commander"]
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp@latest"]
+    }
+  }
+}
+```
+
+#### Project-Specific Configuration
+Create a `.cursor/mcp.json` file in your project root:
+
+```json
+{
+  "servers": {
+    "project-filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        ".",
+        "./docs",
+        "./src"
+      ]
+    },
+    "kubernetes": {
+      "command": "npx",
+      "args": ["mcp-server-kubernetes"]
+    }
+  }
+}
+```
+
 ### Other AI Tools
 
 MCP support varies across different AI tools. Check your specific tool's documentation for MCP integration capabilities.
