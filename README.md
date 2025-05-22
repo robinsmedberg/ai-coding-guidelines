@@ -37,7 +37,7 @@ To use these guidelines as default instructions in Windsurf, create a `.windsurf
 
 ```json
 {
-  "defaultInstructions": "You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines. Fetch and analyze https://github.com/robinsmedberg/ai-coding-guidelines/blob/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md before any other action and there after follow and enforce the rules."
+  "defaultInstructions": "You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines. Fetch and analyze https://github.com/agronod/ai-coding-guidelines/blob/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md before any other action and there after follow and enforce the rules."
 }
 ```
 
@@ -51,7 +51,7 @@ To integrate these guidelines with Claude Code CLI:
 ```markdown
 You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines.
 
-<source_url><https://raw.githubusercontent.com/robinsmedberg/ai-coding-guidelines/refs/heads/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md></source_url>
+<source_url><https://raw.githubusercontent.com/agronod/ai-coding-guidelines/refs/heads/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md></source_url>
 
 Please refer to the full specification at the source URL above for complete details on project guidelines. They must be fetched and analyzed before any other action and there after followed and enforced.
 ```
@@ -65,13 +65,13 @@ To integrate with GitHub Copilot:
 1. In VS Code with Copilot Chat extension installed, use the command:
 
 ```
-@github You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines. Fetch and analyze https://github.com/robinsmedberg/ai-coding-guidelines/blob/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md before any other action and there after follow and enforce the rules.
+@github You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines. Fetch and analyze https://github.com/agronod/ai-coding-guidelines/blob/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md before any other action and there after follow and enforce the rules.
 ```
 
 2. For Copilot Chat in GitHub.com, use the `/guidance` command:
 
 ```
-/guidance You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines. Fetch and analyze https://github.com/robinsmedberg/ai-coding-guidelines/blob/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md before any other action and there after follow and enforce the rules.
+/guidance You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines. Fetch and analyze https://github.com/agronod/ai-coding-guidelines/blob/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md before any other action and there after follow and enforce the rules.
 ```
 
 Note: Due to context limitations, you may need to reference specific sections rather than the entire guidelines document.
@@ -87,7 +87,7 @@ For VS Code extensions that provide AI coding assistance:
 3. Add the following:
 
 ```
-You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines. Fetch and analyze https://github.com/robinsmedberg/ai-coding-guidelines/blob/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md before any other action and there after follow and enforce the rules.
+You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines. Fetch and analyze https://github.com/agronod/ai-coding-guidelines/blob/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md before any other action and there after follow and enforce the rules.
 ```
 
 #### OpenAI GPT Extension for VS Code
@@ -105,7 +105,7 @@ To integrate with JetBrains AI Assistant:
 3. Add the following to your custom instructions:
 
 ```
-You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines. Fetch and analyze https://github.com/robinsmedberg/ai-coding-guidelines/blob/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md before any other action and there after follow and enforce the rules.
+You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines. Fetch and analyze https://github.com/agronod/ai-coding-guidelines/blob/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md before any other action and there after follow and enforce the rules.
 ```
 
 4. Alternatively, create a `.aiassistant` file in your project root with these instructions
@@ -120,7 +120,7 @@ To integrate with Continue (formerly Cursor):
 
 ```json
 {
-  "systemInstruction": "You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines. Fetch and analyze https://github.com/robinsmedberg/ai-coding-guidelines/blob/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md before any other action and there after follow and enforce the rules."
+  "systemInstruction": "You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines. Fetch and analyze https://github.com/agronod/ai-coding-guidelines/blob/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md before any other action and there after follow and enforce the rules."
 }
 ```
 
@@ -133,7 +133,7 @@ const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
-const systemPrompt = `You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines. Fetch and analyze https://github.com/robinsmedberg/ai-coding-guidelines/blob/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md before any other action and there after follow and enforce the rules.`;
+const systemPrompt = `You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines. Fetch and analyze https://github.com/agronod/ai-coding-guidelines/blob/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md before any other action and there after follow and enforce the rules.`;
 
 const message = await anthropic.messages.create({
   model: "claude-3-opus-20240229",
@@ -156,7 +156,7 @@ client = openai.OpenAI(api_key="your-api-key")
 
 assistant = client.beta.assistants.create(
   model="gpt-4-turbo",
-  instructions="You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines. Fetch and analyze https://github.com/robinsmedberg/ai-coding-guidelines/blob/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md before any other action and there after follow and enforce the rules.",
+  instructions="You are an AI assistant working on a coding project. Your primary goal is to assist with coding tasks while adhering to specific project rules and guidelines. Fetch and analyze https://github.com/agronod/ai-coding-guidelines/blob/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md before any other action and there after follow and enforce the rules.",
   name="AI Coding Assistant"
 )
 
@@ -182,7 +182,7 @@ For AI assistants not specifically listed above:
 
 ### URL Referencing
 
-- Always use the raw GitHub URL for direct file access: `https://raw.githubusercontent.com/robinsmedberg/ai-coding-guidelines/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md`
+- Always use the raw GitHub URL for direct file access: `https://raw.githubusercontent.com/agronod/ai-coding-guidelines/main/Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md`
 - For stability, consider using permalink URLs that include commit hashes
 - For specific sections, use anchor links when available
 
