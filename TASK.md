@@ -37,4 +37,4 @@ Tasks are prioritized based on the following criteria:
 
 - [PLANNING.md](./PLANNING.md) - Project architecture and roadmap
 - [README.md](./README.md) - Project overview and integration instructions
-- [Full Process for Coding with AI Coding Assistants.md](./Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md) - Core guidelines
+- [Full Process for Coding with AI Coding Assistants.md](./AI%20Coding%20Agent%20Execution%20Guidelines.md) - Core guidelines
