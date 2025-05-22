@@ -5,6 +5,7 @@ This repository contains a collection of guidelines and best practices for worki
 ## Table of Contents
 
 - [Guidelines](#guidelines)
+- [MCP Servers](#mcp-servers)
 - [Using These Guidelines in Your Projects](#using-these-guidelines-in-your-projects)
   - [Windsurf](#windsurf)
   - [Claude Code CLI](#claude-code-cli)
@@ -21,6 +22,12 @@ This repository contains a collection of guidelines and best practices for worki
 ## Guidelines
 
 - [Full Process for Coding with AI Coding Assistants](./Full%20Process%20for%20Coding%20with%20AI%20Coding%20Assistants.md) - A comprehensive guide to structuring your development process when working with AI assistants.
+
+## MCP Servers
+
+Model Context Protocol (MCP) allows AI assistants to connect to external servers that provide additional tools and capabilities. We provide comprehensive documentation for setting up MCP servers across different AI tools:
+
+- [MCP Server Guide](./MCP-SERVERS.md) - Tool-agnostic guide covering MCP fundamentals, recommended servers  and tool-specific installation instructions with detailed security considerations and troubleshooting.
 
 ## Using These Guidelines in Your Projects
 
