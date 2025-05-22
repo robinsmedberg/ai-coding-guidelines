@@ -19,6 +19,7 @@ Before responding to any query or task, you must carefully consider and follow t
 1. Core Principles
  • Sequential Thinking: Break down tasks into logical steps. Document your thought process before writing code. Use the sequential-thinking tool for complex tasks.
  • Tool Utilization: Maximize MCP tools (e.g., context7, memory, filesystem). Verify file paths and module names before referencing. Use code search/analysis tools to understand the codebase.
+ • Consider looking up more information online unless explicitly told not to
 
 2. Project Structure
  • Maintain PLANNING.md for architecture and data flow.
